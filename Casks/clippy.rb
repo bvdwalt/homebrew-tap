@@ -3,7 +3,7 @@ cask "clippy" do
   name "clippy"
   desc "Terminal clipboard history manager"
   homepage "https://github.com/bvdwalt/clippy"
-  version "0.2.0"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "clippy" do
   on_macos do
     on_intel do
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_darwin_amd64.tar.gz"
-      sha256 "d328075ee0dcdfd00203627648ac3c8a9da359b43c803407922712d3e8d83b0e"
+      sha256 "633674f0e48df72b96fcdd29593e5d9daad39f1121db14b5501721668f9319ab"
     end
     on_arm do
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_darwin_arm64.tar.gz"
-      sha256 "54fd96b947bc822506d39a927071948975c7f5a939878be44fb1170935b78c31"
+      sha256 "10a27d53ff4c38235a233d1adfa22fea97b2f6aad1e0957b5b26b49111f5a5bc"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_linux_amd64.tar.gz"
-      sha256 "8b25145ccfab42c110249768232a94c3e0e38ffb1d0636ee239f7fecb10738f0"
+      sha256 "271591a76fffcfe12191abe6ba03a5aca80f76eb0cf2dbf405107a5f3c8e3d9b"
     end
     on_arm do
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_linux_arm64.tar.gz"
-      sha256 "6915a3e560de0d933762f21a71dc866091f0c6c1245e4d4b1a5383f5cc6544b4"
+      sha256 "9478763bb30f1f366a1718522a1d1806ee8f37b0366e13978d09f700081b4371"
     end
   end
 
