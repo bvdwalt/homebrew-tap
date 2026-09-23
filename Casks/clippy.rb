@@ -33,8 +33,8 @@ cask "clippy" do
 
   binary "clippy"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/clippy"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/clippy"]
   end
 
   # No zap stanza required
