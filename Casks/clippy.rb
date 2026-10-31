@@ -4,25 +4,25 @@ cask "clippy" do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/clippy"]
   end
 
-  version "0.14.0"
+  version "0.14.1"
 
   on_macos do
     on_arm do
-      sha256 "ab9b1b2248f218d975206fa73140731059ae67786b5d2969b2e61fcbc7d82d52"
+      sha256 "ee9608bc124bf6a1f177de07fcead4ec7e0eb65317871bb2a7d6c7bf94c4a716"
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d1665b52b3283a7f0ca9a5ea8fad3b8f8f6dd3330081289ec02996295c3068cb"
+      sha256 "025169ab00342364dde1d831598ae7dd64a5095c94e641958f3a236a1a19c499"
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "b5674de87e4c9d258b7b322a60d79925dded426b9e0667e4f206ff560cc6338e"
+      sha256 "e2e65671c106f47b3747ce7fe7e972582e9f986ed38e5ed60f6831d67afb2024"
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d344bd0a46d978e21615272ba9600bd03c4a28f062ec9b7100d4020624a3135b"
+      sha256 "0e29250a3dad9447f970aa3f34568d8d27f6cc954a814e8b5feb4fa5867147b8"
       url "https://github.com/bvdwalt/clippy/releases/download/v#{version}/clippy_linux_amd64.tar.gz"
     end
   end
